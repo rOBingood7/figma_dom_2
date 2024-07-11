@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+   <div class="container">
+        <h1>ДОБАВЛЕНИЕ, ИЗМЕНЕНИЕ И УДАЛЕНИЕ ЭЛЕМЕНТА ИЗ ТАБЛИЦЫ</h1>
+    
+    <form class="form">
+        <label for="name">Имя</label>
+        <input type="text" id="name" name="name" placeholder="Bruce Reyes" required>
+        <label for="age">Возраст</label>
+        <input type="number" id="age" name="age" placeholder="24" required>
+        <button type="submit">Показать</button>
+    </form>
+    <table>
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Имя студента</th>
+                <th>Год рождения</th>
+                <th>Действия</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            
+        </tbody>
+    </table>
+
+    <dialog>
+        
+        <form name="changeItem">
+            <label for="modal_name">Имя</label>
+            <input type="text" id="modal_name" name="modal_name" required>
+            <label for="modal_age">Возраст</label>
+            <input type="number" id="modal_age" name="modal_age" required>
+            <div class="btns"><button type="submit">Сохранить изменения</button>
+                <button class="close">Close</button></div>
+        </form>
+    </dialog>
+
+   </div>
+
+  
+ 
+    <script type="module" src="./script.js"></script>
+</body>
+</html>
